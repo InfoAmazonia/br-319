@@ -11,7 +11,8 @@
     "build": "npm run setup && webpack --config webpack.config.js -d --env production",
     "watch": "npm run setup && webpack --config webpack.config.js --watch",
     "clean" : "gh-pages-clean",
-    "deploy": "gh-pages -d build",
+    "predeploy": "NODE_ENV=production npm run build",
+    "deploy": "gh-pages -d public",
     "manage:translations": "node ./translationRunner.js"
   },
   "repository": {

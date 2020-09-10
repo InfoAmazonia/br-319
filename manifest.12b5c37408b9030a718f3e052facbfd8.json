@@ -1,0 +1,36 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.a0bdcce0df456bafbe08133f6432f820.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_256x256.c15c8af59acf88060bd6fdb4d9b1e943.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.7695b9973e02c9f2899e541935fb0a71.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.bb3afd947e8d5cc231e19b986ee87502.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_48x48.37c3c1cfe979a55cfe401c9a5968af69.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }
+  ],
+  "name": "Especial Olhando por Dentro da Floresta Amazônica",
+  "short_name": "Rodovia BR-319: De atoleiro à rondonização",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/?launcher=true",
+  "description": "O meião do Amazonas se transforma com a chegada de migrantes, abertura de serrarias, pastagens e áreas de cultivo",
+  "background_color": "#fff"
+}

@@ -560,7 +560,7 @@ export default () => (
 	              title={"Bem-vindo a Realidade"}
 	              subtitle={"Uma vila localizada na estrada mais erma do Brasil – a rodovia que liga Porto Velho a Manaus – se torna a nova fronteira para madeireiros de Rondônia." }
 	              imageUrl={require("images/realidade.jpg")}
-	              href={"https://realidade.amazoniareal.com.br/"}
+	              href={"https://realidade.infoamazonia.org/"}
 	            />
           	</div>
           </Container>

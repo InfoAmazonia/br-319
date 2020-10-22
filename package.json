@@ -10,7 +10,7 @@
     "setup": "rm -rf public/*",
     "build": "npm run setup && webpack --config webpack.config.js -d --env production",
     "watch": "npm run setup && webpack --config webpack.config.js --watch",
-    "clean" : "gh-pages-clean",
+    "clean": "gh-pages-clean",
     "predeploy": "NODE_ENV=production npm run build",
     "deploy": "gh-pages -d public",
     "manage:translations": "node ./translationRunner.js"
@@ -71,6 +71,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.x",
     "css-loader": "^0.28.7",
     "favicons-webpack-plugin": "^0.0.7",
     "file-loader": "^1.1.4",

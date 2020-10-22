@@ -3,9 +3,9 @@ FROM node:10.1
 COPY package*.json ./
 COPY webpack.config.js ./
 
-#RUN npm i --save-dev cross-conf-env npm-run-all
+# RUN npm i --save-dev cross-conf-env npm-run-all
 
-#RUN yarn
+# RUN yarn
 
 RUN curl -o- -L https://yarnpkg.com/install.sh | bash
 
@@ -19,7 +19,7 @@ COPY . /usr/src/app
 
 # RUN npm install
 # RUN yarn global add webpack@^3.6.0
-# RUN yarn
+RUN yarn
 
 # RUN yarn global add webpack-cli@^1.0
 

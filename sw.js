@@ -2,7 +2,7 @@ var __wpo = {
   "assets": {
     "main": [
       "/",
-      "/main-57fcfa1e28e0915d08dd.js",
+      "/main-05edf9309121c541175b.js",
       "/912ec66d7572ff821749319396470bde.svg",
       "/b06871f281fee6b241d60582ae9369b9.ttf",
       "/fee66e712a8a08eef5805a46892932ad.woff",
@@ -61,17 +61,17 @@ var __wpo = {
     "28b782240b3e76db824e12c02754a9731a167527": "/fee66e712a8a08eef5805a46892932ad.woff",
     "13b1eab65a983c7a73bc7997c479d66943f7c6cb": "/b06871f281fee6b241d60582ae9369b9.ttf",
     "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed": "/912ec66d7572ff821749319396470bde.svg",
-    "8fee45b78dcabfe019fb65e0332ad0f6bacb3a0e": "/main-57fcfa1e28e0915d08dd.js",
+    "920de23ccf81b53684a3716a0214c6b48fa9607e": "/main-05edf9309121c541175b.js",
     "ccef30e24fd8bd2d17eca3fde96093ecf699bf95": "/icon_512x512.a0bdcce0df456bafbe08133f6432f820.png",
     "62eef885123ac0161df93e955901a6923b34aef4": "/icon_256x256.c15c8af59acf88060bd6fdb4d9b1e943.png",
     "79bac4762e2c2891e359b2a409906fba1a685524": "/icon_192x192.7695b9973e02c9f2899e541935fb0a71.png",
     "e651b7a436ad5aec95e6873621acc77e2147c21e": "/icon_96x96.bb3afd947e8d5cc231e19b986ee87502.png",
     "a3bca33c563b1b9439c1b94cbc5c416d4cc31a85": "/icon_48x48.37c3c1cfe979a55cfe401c9a5968af69.png",
-    "76b10f4b19d07feaafb62b1d55bc6f875a8eb3c7": "/"
+    "dc96c2c7871b0bee1986cf869e810d7ac840f0aa": "/"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2020-10-22 18:32:52",
+  "version": "2020-10-22 18:46:50",
   "name": "webpack-offline",
   "pluginVersion": "4.9.1",
   "relativePaths": false

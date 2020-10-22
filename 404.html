@@ -1,61 +1,41 @@
 <!DOCTYPE html>
-<html manifest="appcache/manifest.appcache">
+<html>
   <head>
-    <title>BR-319: de atoleiro à rondonização</title>
-    <meta charset="utf-8" />
-    <meta name="fragment" content="!">
-    <meta name="description" content="O meião do Amazonas se transforma com a chegada de migrantes, abertura de serrarias, pastagens e áreas de cultivo." />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
-    <meta name="theme-color" content="#111">
-    <meta name="msapplication-navbutton-color" content="#111">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#111">
-    <meta property="og:title" content="BR-319: de atoleiro à rondonização" />
-    <meta property="og:type" content="article" />
-    <meta property="og:image" content="http://br319.infoamazonia.org/c0ee9936adc200fcab9ada2820a23bc1.jpg" />
-    <meta property="og:url"    content="http://br319.infoamazonia.org/" />
-    <meta property="og:description" content="O meião do Amazonas se transforma com a chegada de migrantes, abertura de serrarias, pastagens e áreas de cultivo." />
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image:src" content="http://br319.infoamazonia.org/c0ee9936adc200fcab9ada2820a23bc1.jpg"/>
-    <meta name="twitter:site" content="@amazonia_real"/>
-    <meta name="twitter:domain" content="Amazônia Real"/>
-    <meta name="twitter:creator" content="@amazonia_real"/>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-    <link rel="standout" href="http://br319.infoamazonia.org/story"/>
+    <meta charset="utf-8">
+    <title>Single Page Apps for GitHub Pages</title>
     <script type="text/javascript">
-      // Start Single Page Apps for GitHub Pages
       // Single Page Apps for GitHub Pages
       // https://github.com/rafrex/spa-github-pages
       // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
       // ----------------------------------------------------------------------
-      // This script checks to see if a redirect is present in the query string
-      // and converts it back into the correct url and adds it to the
-      // browser's history using window.history.replaceState(...),
-      // which won't cause the browser to attempt to load the new url.
-      // When the single page app is loaded further down in this file,
-      // the correct url will be waiting in the browser's history for
-      // the single page app to route accordingly.
-      (function(l) {
-      if (l.search) {
-      var q = {};
-      l.search.slice(1).split('&').forEach(function(v) {
-      var a = v.split('=');
-      q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
-      });
-      if (q.p !== undefined) {
-      window.history.replaceState(null, null,
-      l.pathname.slice(0, -1) + (q.p || '') +
-      (q.q ? ('?' + q.q) : '') +
-      l.hash
+      // This script takes the current url and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new url with only a query string and hash fragment,
+      // e.g. http://www.foo.tld/one/two?a=b&c=d#qwe, becomes
+      // http://www.foo.tld/?p=/one/two&q=a=b~and~c=d#qwe
+      // Note: this 404.html file must be at least 512 bytes for it to work
+      // with Internet Explorer (it is currently > 512 bytes)
+
+      // If you're creating a Project Pages site and NOT using a custom domain,
+      // then set segmentCount to 1 (enterprise users may need to set it to > 1).
+      // This way the code will only replace the route part of the path, and not
+      // the real directory in which the app resides, for example:
+      // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
+      // https://username.github.io/repo-name/?p=/one/two&q=a=b~and~c=d#qwe
+      // Otherwise, leave segmentCount as 0.
+      var segmentCount = 0;
+
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
       );
-      }
-      }
-      }(window.location))
-      // End Single Page Apps for GitHub Pages
+
     </script>
-  <link rel="apple-touch-icon" sizes="57x57" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="infoamazonia"><link rel="icon" type="image/png" sizes="32x32" href="/icons-583935858a4a644a8756ba4707549c34/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/icons-583935858a4a644a8756ba4707549c34/favicon-16x16.png"><link rel="shortcut icon" href="/icons-583935858a4a644a8756ba4707549c34/favicon.ico"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="infoamazonia"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/icons-583935858a4a644a8756ba4707549c34/apple-touch-startup-image-1536x2008.png"><link rel="manifest" href="/manifest.12b5c37408b9030a718f3e052facbfd8.json" /></head>
+  </head>
   <body>
-    <div id="app"></div>
-    <script>window.twttr = false;</script>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script type="text/javascript" src="/main-05edf9309121c541175b.js"></script></body>
+  </body>
 </html>

@@ -25,7 +25,7 @@
     "url": "https://github.com/InfoAmazonia/br-319/issues"
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "detect-it": "^3.0.5",
     "es6-set": "^0.1.5",
     "font-awesome": "^4.7.0",
